@@ -1,0 +1,44 @@
+.loader{
+    background-image: url(/public/background\ header.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 20s;
+    z-index: 100;
+  }
+  
+  .spinner {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    cursor: not-allowed;
+    border-radius: 50%;
+    border: 2px solid #444;
+    box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #6730ff, 10px 0 10px #0bff1f, 10px 10px 10px 0px#00cc3d, 0 10px 10px 0px #00a308, -10px 10px 10px 0px #a6ff00;
+    animation: rot55 0.7s linear infinite;
+  }
+  
+  .spinnerin {
+    border: 2px solid #444;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes rot55 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
